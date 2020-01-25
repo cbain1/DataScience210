@@ -4,6 +4,8 @@ import sys
 # Define main for loops, bro
 def main():
 
+    def condition (i,j,length1,length2):
+        return (i < length1 and j < length2)
 
     def merge():
 
@@ -23,23 +25,43 @@ def main():
             list2.append(int(line))
     
         merged = [] 
-        i, j = 0, 0
-        same = 0
+        i=0
+        j=0
     
-        while i < length1 and j < length2: 
-            if list1[i] < list2[j]: 
-                merged.append(list2[i]) 
-                i += 1
-        
-            elif list2[j] < list1[i]: 
-                merged.append(list2[j]) 
-                j += 1
-            else:
+        while condition(i,j,length1,length2): 
+            if len(merged) > 0:
+                while (list1[i]==merged[len(merged)-1] or list2[j]==merged[len(merged)-1]):
+                    if(list1[i]==merged[len(merged)-1]):
+                        i+=1
+                        if not condition(i,j,length1,length2):
+                            break
+                    elif(list2[j]==merged[len(merged)-1]):
+                        j+=1
+                        if not condition(i,j,length1,length2):
+                            break
+            if not condition(i,j,length1,length2):
+                break
+            if list1[i]==list2[j]:
                 merged.append(list1[i])
                 i+=1
+            elif list1[i] < list2[j]: 
+                merged.append(list1[i]) 
+                i += 1
+            elif list2[j] < list1[i]: 
+                merged.append(list2[j]) 
+                j += 1 
+
+        while (i>=length1 and j<length2):
+            if(list2[j]==merged[len(merged)-1]):
                 j+=1
-    
-        merged = merged + list1[i:] + list2[j:] 
+            else:
+                merged.append(list2[j])
+
+        while (j>=length2 and i<length1):
+            if(list1[i]==merged[len(merged)-1]):
+                i+=1
+            else:
+                merged.append(list1[i])
         
         return merged
 
@@ -47,7 +69,6 @@ def main():
         print(merge())
     else:
         print(len(merge()))
-    print
 
 
 if __name__ == '__main__':
@@ -57,6 +78,6 @@ if __name__ == '__main__':
 
 
 # catherinebain > python3 ListsQ3.py
-# 236631
+# 236629
 
 
