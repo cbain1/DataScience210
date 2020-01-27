@@ -2,7 +2,7 @@ import sys
 import random
 
 
-# Define main for try/except bro
+
 def main():
     fruit = 'bananas'
     letter = fruit[1]
@@ -17,6 +17,11 @@ def main():
 
     for i in fruit:
         print(i)
+
+    for i in reversed(fruit):
+        print(i)
+
+    
 
 if __name__ == '__main__':
     main()
