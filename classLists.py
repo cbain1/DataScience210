@@ -32,6 +32,23 @@ def main():
     #print all of list c do this.... or just print c
     for x in c:
         print(x)
+    #if you say x in c... this creates a list from 0 to length c
+
+    # ah yes, two lines of code that do literally nothing
+    for x in []:
+        print('hi')
+
+    print('-'*10)
+
+    #--------------
+
+    #look, more proof that lists are just strings
+    print([1,2]+[3,'random'])
+    print([1,2,',']*4)
+
+    # Look, you can use slices
+    print(c[:])
+    print(c[1:3])
 
 if __name__ == '__main__':
     main()
