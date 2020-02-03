@@ -21,6 +21,18 @@ def main ():
         email = line.split()
         emailList.append(email[1])
     print(emailList)
+
+    #Exercise 1 - find the length of a person's username
+    for email in emailList:
+        position = email.find('@')
+        if position < 10:
+            print(email[:position]+": the length of your username is adequate")
+        else:
+            print(email[:position]+": bad")
+
+    #Exercise 2 - only give unique elements of the list
+    
+
     
 
 if __name__ == '__main__':
