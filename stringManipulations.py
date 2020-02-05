@@ -20,7 +20,7 @@ def main ():
         #so if we made it here in the loop, the line starts with from 
         email = line.split()
         emailList.append(email[1])
-    print(emailList)
+
 
     #Exercise 1 - find the length of a person's username
     for email in emailList:
@@ -29,8 +29,17 @@ def main ():
             print(email[:position]+": the length of your username is adequate")
         else:
             print(email[:position]+": bad")
+    print()
 
-    #Exercise 2 - only give unique elements of the list
+    # Exercise 2 - only give unique elements of the list
+    unique = []
+    for email in emailList:
+        if email not in unique:
+            unique.append(email)
+    print(unique)
+
+
+
     
 
     

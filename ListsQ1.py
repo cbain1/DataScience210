@@ -51,17 +51,18 @@ if __name__ == '__main__':
 
 
 
-
-# catherinebain > python3 ListsQ1.py
-# Please enter a string of upper/lowercase letters and spaces: mOm
-# The statement that your word is a palindrome is True
-# The statement that your word is a case insensitive palindrome is True
-# catherinebain > python3 ListsQ1.py
-# Please enter a string of upper/lowercase letters and spaces: m     OM
-# The statement that your word is a palindrome is False
-# The statement that your word is a case insensitive palindrome is True
-# catherinebain > python3 ListsQ1.py
-# Please enter a string of upper/lowercase letters and spaces: m         o        M
-# The statement that your word is a palindrome is False
-# The statement that your word is a case insensitive palindrome is True
-# catherinebain > 
+"""
+catherinebain > python3 ListsQ1.py
+Please enter a string of upper/lowercase letters and spaces: mOm
+The statement that your word is a palindrome is True
+The statement that your word is a case insensitive palindrome is True
+catherinebain > python3 ListsQ1.py
+Please enter a string of upper/lowercase letters and spaces: m     OM
+The statement that your word is a palindrome is False
+The statement that your word is a case insensitive palindrome is True
+catherinebain > python3 ListsQ1.py
+Please enter a string of upper/lowercase letters and spaces: m         o        M
+The statement that your word is a palindrome is False
+The statement that your word is a case insensitive palindrome is True
+catherinebain > 
+"""

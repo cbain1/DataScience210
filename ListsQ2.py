@@ -29,7 +29,8 @@ def main():
 if __name__ == '__main__':
     main()
 
-
-# catherinebain > python3 ListsQ2.py
-# Your average number of letters is:  4.
-# 1875
+"""
+catherinebain > python3 ListsQ2.py
+Your average number of letters is:  4.
+1875
+"""
