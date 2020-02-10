@@ -41,17 +41,21 @@ def main():
     
     # let's do an exercise  - tell me how many of each letter are in the following words
     words = 'supercalifragiliciousexpealidocious paraskivatriaphobia'
-    alphabet = {'a':0,'b':0,'c':0,'d':0,'e':0,'f':0,'g':0,'h':0,'i':0,'j':0,'k':0,'l':0,'m':0,'n':0,'o':0,'p':0,'q':0,'r':0,'s':0,'t':0,'u':0,'v':0,'w':0,'x':0,'y':0,'z':0}
+    letterCount = {}
     for letter in words:
-        if letter in alphabet:
-            alphabet[letter]+=1
-    # you can then continue this pattern for the rest of the alphabet
-    print(alphabet)
+        if letter in letterCount: 
+            letterCount[letter]+=1
+        else:
+            letterCount[letter]=1
+    print(letterCount)
 
+    keyList = list(letterCount.keys())
+    print(keyList)
         
+    keyList.sort()
 
-
-
+    for letter in keyList:
+        print(letter,letterCount[letter])
 
 
 # This is the standard boilerplate that calls the main() function.

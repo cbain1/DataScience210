@@ -1,12 +1,7 @@
 import sys
 import random
 
-# Define main for loops, bro
-def main():
-
-    request = ['lists', 'are', 'pretty', 'cool', 'well', 'as', 'cool', 'as', 'computer', 'science', 'gets', 'which', 'is', 'not', 'very', 'cool' ]
-
-    def beret(request):
+def beret(request):
         total = 0
         strings = 0
         #Loops through all words in request
@@ -22,6 +17,11 @@ def main():
         average = total/strings
 
         return (average)
+
+# Define main for loops, bro
+def main():
+
+    request = ['lists', 'are', 'pretty', 'cool', 'well', 'as', 'cool', 'as', 'computer', 'science', 'gets', 'which', 'is', 'not', 'very', 'cool' ]
             
 
     print("Your average number of letters is: ", beret(request))
@@ -31,6 +31,5 @@ if __name__ == '__main__':
 
 """
 catherinebain > python3 ListsQ2.py
-Your average number of letters is:  4.
-1875
+Your average number of letters is:  4.1875
 """

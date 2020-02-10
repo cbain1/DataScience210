@@ -9,6 +9,11 @@ def main():
 
 #type is a way of figuring out what class a certain variable is i.e. whether the variable is an integer or a double or a string value
 
+    list1 = [1,2,3,3,4]
+    list2 = [3,3,4,5]
+
+    if list1[2] in list2:
+        print("true")
 
 # This is the standard boilerplate that calls the main() function.
 if __name__ == '__main__':
