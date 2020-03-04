@@ -11,7 +11,7 @@ def findStuff(babyFile, relevantInfo):
 	for line in info:
 		relevantInfo[(line.group(2),'Male')] = line.group(1)
 		relevantInfo[(line.group(3),'Female')] = line.group(1)
-	return relevantInfo
+	#return relevantInfo
 
 def main():
 

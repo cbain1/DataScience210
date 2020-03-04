@@ -2,9 +2,8 @@ import sys
 import random 
 import re
 
-
 def main():
-	file = open("youtubemain.html").read()
+	file = open("genome.html").read()
 
 	numOpen = {}
 	numClose = {}
@@ -24,10 +23,8 @@ def main():
 			numClose[name]+=1
 		else:
 			numClose[name]=1
-	print(numClose)
 	
-
-	print("\nHTML Tag Information for the file youtubemain.html\n")
+	print("\nHTML Tag Information for the file genome.html\n")
 	print("Tag\t\tNumber Opened\t\tNumber Closed")
 	for key in numOpen:
 		if key not in numClose:
@@ -35,7 +32,7 @@ def main():
 		if numOpen[key] > numClose[key] and numClose[key]>0:
 			badTags+=numOpen[key]-numClose[key]
 		print("{}\t\t".format(key),"{}".format(numOpen[key]),"\t\t\t\t{}".format(numClose[key]))
-	print("------------------------------------------------------")
+	print("-"*50)
 	print("Total \"Bad\" Tags\t\t\t\t",badTags)
 	
 
