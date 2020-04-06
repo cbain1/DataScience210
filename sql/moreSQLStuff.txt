@@ -1,0 +1,31 @@
+Stuff we did:
+	1) what is a database?
+	2) SELECT queries (and all associated commands)
+	3) the phases of a select query 
+	4) JOINS, which are a way to create intermediate tables logically using intersection, union, and complement
+	5) "database", tables, schema - an organization of the tables in the database (ER diagram)
+
+
+Stuff we did not do, but you can:
+	01) database schema design, i.e. how do you build a series of "logical" tables for a database that is good
+		a. logical sensibility
+		b. query optimization
+		c. consistent (database term where if you are modifying the database in one part, you don't mess up another part)
+		d. minimize redundancy 
+	02) date/time management in SQL
+	03) UNION and UNIONALL
+	04) subqueries - provides a way to query tables that are created as output from other tables 
+	05) INSERT/DELETE/UPDATE commands -- follow the same format as SELECT, but you do the word 
+	06) transaction - a wrapper that defines atomic operation
+		-- running multiple queries at once, so no one else can get in the middle of yours
+	07) trigger - conditional, event based operation 
+	08) regex (but the sql version)
+	09) database management 
+	10) views/indexes
+		- views: dynamic table that isn't actually stored 
+			- to do this, you write a select statement and give it a name
+			- this allows you to treat that query as a table (virtually stored as a table)
+		- index: a faster way to query a database that has very common query parameters on that table 
+			- basically a short hand for searching for something common
+			- similar to the index in the back of a book 
+			- prestores answers to commonly asked questions about a table 
