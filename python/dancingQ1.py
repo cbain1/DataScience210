@@ -2,7 +2,7 @@ import sys
 import random 
 import re
 
-def findStuff(file, links, fileNum,count):
+def findStuff(file, links, fileNum, count):
 
 	info = re.finditer(r'(=|,|:\s|:|[()]){1}(\'|")?[^;](((http:|https:)?\/{1,2}[^\/\"\'\\\s>]+)([^\'\"\s>]+))',file)
 
@@ -20,7 +20,6 @@ def findStuff(file, links, fileNum,count):
 		findType = re.finditer(r'(\.|=)([a-z]{2,4})(\?|$|%)',remainder)
 		for stuff in findType:
 			linkType = "."+(stuff.group(2)).lower()
-
 		link = match.group(4)
 		if "." in link:
 			d = "."+link.split(".")[-1]

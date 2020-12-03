@@ -1,0 +1,110 @@
+46
+customerName	customerID	country
+Luís Gonçalves 	 1 	 Brazil
+Leonie Köhler 	 2 	 Germany
+François Tremblay 	 3 	 Canada
+Bjørn Hansen 	 4 	 Norway
+František Wichterlová 	 5 	 Czech Republic
+Helena Holý 	 6 	 Czech Republic
+Astrid Gruber 	 7 	 Austria
+Daan Peeters 	 8 	 Belgium
+Kara Nielsen 	 9 	 Denmark
+Eduardo Martins 	 10 	 Brazil
+
+412
+EmployeeName	invoiceId
+Jane Peacock 	 98
+Jane Peacock 	 121
+Jane Peacock 	 143
+Jane Peacock 	 195
+Jane Peacock 	 316
+Jane Peacock 	 327
+Jane Peacock 	 382
+Jane Peacock 	 99
+Jane Peacock 	 110
+Jane Peacock 	 165
+
+412
+invoiceId	COUNT(invoiceLineId
+1 	 2
+2 	 4
+3 	 6
+4 	 9
+5 	 14
+6 	 1
+7 	 2
+8 	 2
+9 	 4
+10 	 6
+
+2240
+Name	Artist	 invoiceLineId
+For Those About To Rock (We Salute You) 	 AC/DC 	 579
+Balls to the Wall 	 Accept 	 1
+Balls to the Wall 	 Accept 	 1154
+Fast As a Shark 	 Accept 	 1728
+Restless and Wild 	 Accept 	 2
+Princess of the Dawn 	 Accept 	 580
+Put The Finger On You 	 AC/DC 	 3
+Inject The Venom 	 AC/DC 	 4
+Inject The Venom 	 AC/DC 	 1155
+Snowballed 	 AC/DC 	 581
+
+14
+Name	songCount
+Music 	 3290
+TV Shows 	 213
+90’s Music 	 1477
+Music 	 3290
+Music Videos 	 1
+TV Shows 	 213
+Brazilian Music 	 39
+Classical 	 75
+Classical 101 - Deep Cuts 	 25
+Classical 101 - Next Steps 	 25
+
+3503
+Name	albumName	mediaType	genre
+For Those About To Rock (We Salute You) 	 For Those About To Rock We Salute You 	 MPEG audio file 	 Rock
+Balls to the Wall 	 Balls to the Wall 	 Protected AAC audio file 	 Rock
+Fast As a Shark 	 Restless and Wild 	 Protected AAC audio file 	 Rock
+Restless and Wild 	 Restless and Wild 	 Protected AAC audio file 	 Rock
+Princess of the Dawn 	 Restless and Wild 	 Protected AAC audio file 	 Rock
+Put The Finger On You 	 For Those About To Rock We Salute You 	 MPEG audio file 	 Rock
+Let's Get It Up 	 For Those About To Rock We Salute You 	 MPEG audio file 	 Rock
+Inject The Venom 	 For Those About To Rock We Salute You 	 MPEG audio file 	 Rock
+Snowballed 	 For Those About To Rock We Salute You 	 MPEG audio file 	 Rock
+Evil Walks 	 For Those About To Rock We Salute You 	 MPEG audio file 	 Rock
+
+3
+EmployeeName	salesMade
+Jane Peacock 	 146
+Margaret Park 	 140
+Steve Johnson 	 126
+
+1
+employeeName	sales2010
+Jane Peacock 	 221.92
+
+
+1
+employeeName	sales
+Jane Peacock 	 833.04
+
+24
+billingCountry	totalSales
+USA 	 523.0600000000003
+Canada 	 303.9599999999999
+France 	 195.09999999999994
+Brazil 	 190.09999999999997
+Germany 	 156.48
+United Kingdom 	 112.85999999999999
+Czech Republic 	 90.24000000000001
+Portugal 	 77.23999999999998
+India 	 75.25999999999999
+Chile 	 46.62
+
+1
+Song	Album	Artist	totalSold
+Black Diamond 	 Greatest Kiss 	 Kiss 	 1
+
